@@ -1,0 +1,5 @@
+<div> <%= team.name%> </div>
+  <%= button_to('Show', team_path(team), method: :get)%>
+  <%= button_to('Edit', edit_team_path(team), method: :get)%>
+  <%= button_to('Delete Team', team_path(team), method: :delete, data:{confirm: 'Delete the team? Are you sure?'})%>
+  

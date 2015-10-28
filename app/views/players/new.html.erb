@@ -1,0 +1,14 @@
+<%= form_for @player do |f|%>
+
+<%= f.label :name, 'full name'%>
+<%= f.text_field :name%> 
+<br>
+
+<%= f.label :team_id%>
+<%= f.select(:team_id, Team.all.collect {|t| [t.name, t.id]})%> 
+<br>
+
+<br>
+<%= f.submit 'player me!' %>
+
+<% end %>

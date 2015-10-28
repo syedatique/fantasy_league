@@ -1,0 +1,11 @@
+<center>
+  <div> <%= player.name%> </div>
+ 
+ <table>
+   <td> <%= button_to('Show', player_path(player), method: :get)%> </td>
+   <td><%= button_to('Edit', edit_player_path(player), method: :get)%></td>
+   <td><%= button_to('Delete player', player_path(player), method: :delete, data:{confirm: 'Delete the player? Are you sure?'})%>
+   </td>
+ </table>
+
+ </center>
